@@ -68,6 +68,8 @@ pub fn animate_motion(y: Vec<Vec<(f64,f64,f64)>>, max_rad: f64) {
                 -max_rad..max_rad)
             .unwrap();
         
+        // Uncomment below to see axis 
+        //chart.configure_axes().light_grid_style(WHITE.mix(0.2)).label_style(("Calibri", 10)).draw().unwrap();
         chart.configure_axes().draw().unwrap();
 
         chart
